@@ -23,7 +23,7 @@ Può essere utilizzato come base per applicazioni che richiedono localizzazione,
 
 1.  Clona la repository:
     ```sh
-    git clone [https://github.com/FiloVanni57/CoordinateServer.git](https://github.com/FiloVanni57/CoordinateServer.git)
+    git clone https://github.com/FiloVanni57/CoordinateServer.git
     ```
 
 2.  Naviga nella cartella del progetto:
@@ -48,17 +48,10 @@ Può essere utilizzato come base per applicazioni che richiedono localizzazione,
 ## 📚 Documentazione API
 
 Se abilitata, la documentazione delle API è disponibile tramite Swagger all'indirizzo:
-[http://localhost:3000/api-docs](http://localhost:3000/api-docs) 📝
+[http://localhost:3000/api-docs] 📝
 
 ---
 
-## 🧪 Test
-
-Per eseguire i test, utilizza il comando:
-
-```sh
-npm test
-```
 ## 🤝 Contribuire
 
 Per contribuire al progetto:
