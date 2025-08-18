@@ -1,0 +1,18 @@
+{
+    "server": [
+        {
+            "nome": "minecraft empire",
+            "versione": "fabric-1.21.5",
+            "descrizione": "",
+            "partecipanti": [],
+            "indirizzo": "*****.aternos.me:*****"
+        },
+        {
+            "nome": "factions",
+            "versione": "1.21.5",
+            "descrizione": "",
+            "partecipanti": [],
+            "indirizzo": "*****.aternos.me:******"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "coordinate-serverv2",
+  "version": "1.0.0",
+  "description": "Questo tool, scritto in HTML, CSS, JS permette di tener traccia e di avere accesso in modo semplice a tutti i luoghi importanti che sono stati trovati all'interno dei vari server. Fra i luoghi sono stati selezionati: - I biomi. - Le strutture generate dal mondo. - Le costruzioni effettuate dagli utenti nei vari server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^1.41.3",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "mongodb": "^6.15.0",
+    "multer": "^1.4.5-lts.2",
+    "multer-storage-cloudinary": "^4.0.0",
+    "sharp": "^0.34.1",
+    "streamifier": "^0.1.1",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
+  }
+}

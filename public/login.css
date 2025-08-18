@@ -1,0 +1,33 @@
+#video-wp {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.card-login {
+    background-color: rgba(205, 205, 205, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+.card-body {
+    color: black;
+}
+
+.form-label {
+    color: black;
+}
+
+.container {
+    height: 100vh;
+}
+
+#accedi {
+    display: flex;
+    justify-content: center;
+}

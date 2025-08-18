@@ -1,0 +1,16 @@
+{
+    "selettori": [
+        {
+            "nome": "biomi",
+            "descrizione": "Pagina che contiene tutti i biomi scoperti dai giocatori nel server"
+        },
+        {
+            "nome": "strutture",
+            "descrizione": "Pagina che contiene tutte le strutture scoperte dai giocatori nel server"
+        },
+        {
+            "nome": "costruzioni",
+            "descrizione": "Pagina che contiene tutte le costruzioni create dai giocatori nel server"
+        }
+    ]
+}

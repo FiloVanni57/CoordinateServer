@@ -1,0 +1,412 @@
+body {
+    background-image: url('img/immagine_index.png');
+    /* Percorso alla tua immagine */
+    background-size: cover;
+    /* Copre l'intera area */
+    background-position: center center;
+    /* Centra l'immagine */
+    background-repeat: no-repeat;
+    /* Non ripetere l'immagine */
+    background-attachment: fixed;
+    /* Fissa l'immagine durante lo scroll */
+    /* Aggiungi un colore di fallback nel caso l'immagine non carichi */
+    background-color: #333;
+    /* Un grigio scuro */
+    margin: 0;
+    /* Assicurati non ci siano margini di default */
+    padding: 0;
+    /* Assicurati non ci siano padding di default */
+}
+
+#container-benvenuto {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.testo {
+    position: absolute;
+    top: 30%;
+    color: white;
+    text-shadow: 0 0 2px #000000, 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 40px #000000;
+    /* animation: glow 1.5s infinite alternate; */
+}
+
+.freccia {
+    position: absolute;
+    top: 70%;
+    animation: up-down 1s infinite alternate;
+    justify-self: center;
+}
+
+.bi-arrow-down {
+    scale: 3;
+}
+
+#benvenuto {
+    font-size: 50px;
+    margin: 5px;
+    line-height: 1.8;
+    /* Aumenta la spaziatura tra le linee di parole dello stesso paragrafo */
+}
+
+@keyframes up-down {
+    0% {
+        top: 70%;
+    }
+
+    100% {
+        top: 80%;
+    }
+}
+
+#sotto-titolo {
+    font-size: 25px;
+    margin: 5px;
+    line-height: 1.8;
+    /* Aumenta la spaziatura tra le linee di parole dello stesso paragrafo */
+}
+
+#titolo-nav {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+@media (max-width:1000px) {
+    #benvenuto {
+        font-size: 30px;
+    }
+
+    #sotto-titolo {
+        font-size: 15px;
+        line-height: 1.8;
+        /* Aumenta la spaziatura tra le linee di parole dello stesso paragrafo */
+    }
+
+    #titolo-nav {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width:500px) {
+    #benvenuto {
+        font-size: 20px;
+    }
+
+    #sotto-titolo {
+        line-height: 1.8;
+        font-size: 10px;
+    }
+
+    #titolo-nav {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    .server-nome,
+    .scelta-nome {
+        line-height: 1.8 !important;
+        font-size: 12px;
+    }
+
+    .server-versione {
+        line-height: 1.8;
+        font-size: 7px;
+    }
+
+    .server-descrizione .server-indirizzo,
+    .server-partecipanti .scelta-descrizione {
+        line-height: 2 !important;
+        font-size: 8px !important;
+    }
+
+    #container-elenco-server,
+    #container-elenco-scelte {
+        scale: 0.7;
+    }
+}
+
+@media (max-width:386px) {
+    #benvenuto {
+        font-size: 15px;
+    }
+
+    #sotto-titolo {
+        font-size: 8px;
+    }
+
+    #titolo-nav {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .bottone-nav {
+        scale: 0.8;
+    }
+}
+
+@media (max-width:344px) {
+    #titolo-nav {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}
+
+.immagine-copertina {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#container-elenco-server,
+#container-elenco-scelte {
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Sfondo leggermente scuro per leggibilità */
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    /* Spazio sotto l'elenco */
+}
+
+/* Stile per ogni elemento della lista */
+.server-list-item {
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    color: #f0f0f0;
+    /* Colore testo chiaro */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    overflow: hidden;
+}
+
+.server-list-item:hover {
+    background-color: rgba(70, 70, 70, 0.9);
+    /* Sfondo al passaggio del mouse */
+    color: #ffffff;
+    transform: translateY(-3px);
+    /* Leggero effetto "sollevamento" */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Stile per il nome del server */
+.server-list-item .server-nome,
+.scelta-item .scelta-nome {
+    color: #ffffff;
+    /* Nome più evidente */
+    font-weight: bold;
+    text-shadow: 0 0 2px #000000, 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 40px #000000;
+    /* animation: glow 1.5s infinite alternate; */
+}
+
+.server-versione {
+    display: flex;
+    justify-content: center;
+}
+
+/* Stile per la descrizione e altri dettagli */
+.server-list-item p,
+.server-list-item small,
+.scelta-item p {
+    color: #cccccc;
+    /* Testo secondario leggermente più scuro */
+}
+
+.server-list-item .text-muted {
+    color: #a0a0a0 !important;
+    /* Rendi 'text-muted' un po' più chiaro su sfondo scuro */
+}
+
+/* Stile per il logo del server */
+.server-logo,
+.scelta-logo {
+    border: 1px solid #555;
+    /* Piccolo bordo intorno al logo */
+    margin-bottom: 5px;
+    max-width: 120px;
+    max-height: 120px;
+}
+
+/* Assicurati che il container di benvenuto funzioni ancora bene */
+#container-benvenuto {
+    margin-bottom: 2rem;
+    /* Aggiungi un po' di spazio sotto la sezione benvenuto */
+    min-height: 100vh;
+}
+
+/* Stile specifico per la descrizione per gestire il testo lungo */
+.server-list-item .server-descrizione,
+.scelta-item .scelta-descrizione {
+    white-space: normal;
+    /* Assicura che il testo vada a capo */
+    word-wrap: break-word;
+    /* Forza l'andare a capo anche per parole molto lunghe */
+    overflow-wrap: break-word;
+    /* Standard equivalente a word-wrap */
+    text-align: justify;
+    /* Opzionale: giustifica il testo per un look più pulito */
+    margin-bottom: 0.5rem;
+    /* Assicura un po' di spazio sotto la descrizione */
+}
+
+.server-list-item .server-nome,
+.server-list-item .server-indirizzo,
+.server-list-item .server-partecipanti,
+.scelta-item .scelta-nome {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#container-elenco-server,
+#container-elenco-scelte {
+    background-image: url('img/stone_texture.png');
+    /* Percorso alla tua texture */
+    background-repeat: repeat;
+    /* Ripeti la texture */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Colore di fallback o sovrapposizione scura */
+    background-blend-mode: multiply;
+    /* Miscela l'immagine con il colore di sfondo per scurirla */
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    border: 2px solid rgba(80, 80, 80, 0.7);
+    /* Aggiungi un bordo per definire meglio */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    /* Ombra esterna per profondità */
+}
+
+/* prova */
+#imageOverlay {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black background with opacity */
+    backdrop-filter: blur(5px);
+    /* Apply blur to the background */
+    -webkit-backdrop-filter: blur(5px);
+    /* Safari support */
+    /* Removed display: flex; from here to ensure it's hidden by default */
+    justify-content: center;
+    /* Keep centering rules for when it is displayed by JS */
+    align-items: center;
+    /* Keep centering rules for when it is displayed by JS */
+}
+
+/* Style the enlarged image */
+#enlargedImage {
+    max-width: 90%;
+    /* Maximum width */
+    max-height: 90%;
+    /* Maximum height */
+    display: block;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition for scaling */
+}
+
+/* Close button for the overlay */
+#closeOverlay {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#closeOverlay:hover,
+#closeOverlay:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#container-musica {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 80%;
+    height: 43%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    border-radius: 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+}
+
+#playlist {
+    padding-top: 10px;
+}
+
+#volume {
+    padding-top: 10px;
+}
+
+#volumeSlider {
+    width: 100%;
+}
+
+.copertina {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copertinaCanzone {
+    padding-top: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+#controlli-musica {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+#indietro,
+#pausa,
+#avanti {
+    display: flex;
+    justify-content: center;
+    scale: 2;
+    margin-bottom: 15px;
+}
+
+.bi-skip-backward-fill,
+.bi-skip-forward-fill {
+    padding-left: 3px;
+    padding-top: 3px;
+}
+
+.bi-pause-fill {
+    padding-left: 4px;
+    padding-top: 3px;
+}
+
+#currentTime {
+    display: flex;
+    justify-content: start;
+}
+
+#totalDuration {
+    display: flex;
+    justify-content: end;
+}

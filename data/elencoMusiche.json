@@ -1,0 +1,14 @@
+{
+    "musiche": [
+        {
+            "titolo": "otherside",
+            "artista": "Aaron Cherof, C418, Lena Raine, Samuel Åberg",
+            "source": "/audio/otherside.mp3"
+        },
+        {
+            "titolo": "pigstep",
+            "artista": "Aaron Cherof, C418, Lena Raine, Samuel Åberg",
+            "source": "/audio/pigstep.mp3"
+        }
+    ]
+}

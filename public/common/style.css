@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../fonts/MinecraftStandard.otf');
+}
+
+body {
+    background-color: rgb(128, 128, 128);
+}
+
+* {
+    font-family: 'Minecraft', sans-serif;
+    font-size: 12px;
+}
+
+.card {
+    width: 100% !important;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.immagine {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.card-beforeClick {
+    background-color: rgba(128, 128, 128, 0.7);
+    width: 55%;
+    justify-self: center;
+    transition: background-color 0.5s ease;
+}
+
+.card-afterClick {
+    background-color: rgba(128, 128, 128, 0.7);
+    width: 100%;
+    justify-self: center;
+    transition: background-color 0.5s ease;
+}
+
+.card-beforeClick:hover {
+    background-color: rgba(100, 100, 100, 0.9);
+    width: 55%;
+    justify-self: center;
+    transition: background-color 0.5s ease;
+}
+
+.card-afterClick:hover {
+    background-color: rgba(100, 100, 100, 0.9);
+    width: 100%;
+    justify-self: center;
+    transition: background-color 0.5s ease;
+}
+
+.nav-item {
+    margin: 4px;
+}
+
+.bottone-nav {
+    margin: 4px;
+}
+
+.bottoni {
+    background-color: rgba(128, 128, 128, 0);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.bottone-invio {
+    background-color: rgba(128, 128, 128, 0.6);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.bottone-invio:hover {
+    background-color: rgba(128, 128, 128, 1);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.bottoni:hover {
+    background-color: rgba(15, 15, 15, 0.6);
+    border-color: rgba(128, 128, 128, 0.8);
+}
+
+.nuovo-bioma {
+    background-color: rgba(128, 128, 128, 0);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.nuovo-bioma:hover {
+    background-color: rgba(15, 15, 15, 0.6);
+    border-color: rgba(128, 128, 128, 0.8);
+}
+
+.list-group-item {
+    background-color: rgba(128, 128, 128, 0);
+}
+
+.descrizione{
+    word-break: break-all !important;
+    white-space: normal;
+}
+
+.barra {
+    background-color: rgba(33, 37, 41, 0.4);
+    transition: background-color 0.5s ease;
+}
+
+.barra:hover {
+    background-color: rgba(33, 37, 41, 0.7);
+}
+
+.offcanvas {
+    background-color: rgba(33, 37, 41, 1);
+    width: 600px !important;
+}
+
+.placeholder-nero::placeholder {
+    color: black;
+    opacity: 0.8;
+}
+
+.dropdown-menu {
+    background-color: rgba(33, 37, 41, 0.4);
+}
+
+.switch-privato {
+    padding-left: 42px;
+    padding-top: 13px;
+}
+
+.switch {
+    transform: scale(2);
+}
+
+.switch-label {
+    padding-left: 15px;
+}
+
+@media (max-width: 751px) {
+    .titolo {
+        font-size: 10px !important;
+    }
+    .coordinate {
+        font-size: 8px !important;
+    }
+    .scoperta {
+        font-size: 8px !important;
+    }
+    .creatore {
+        font-size: 8px !important;
+    }
+    .data-scoperta {
+        font-size: 8px !important;
+    }
+    .descrizione {
+        font-size: 8px !important;
+    }
+    .card {
+        width: 130% !important;
+    }
+}
+
+@media (max-width: 580px) {
+    .bottone-card {
+        scale: 0.9 !important;
+    }
+}
+
+@media (max-width: 500px) {
+    #titolo-nav {
+        font-size: 15px !important;
+        margin-left: 5px !important;
+    }
+    .bottone-nav {
+        scale: 0.9 !important;
+    }
+    .bottone-card {
+        scale: 0.8 !important;
+    }
+}
+
+@media (max-width:386px) {
+    #titolo-nav {
+        font-size: 10px !important;
+        margin-left: 5px !important;
+    }
+    .bottone-nav {
+        scale: 0.7 !important;
+    }
+}
+
+@media (max-width:344px) {
+    #titolo-nav {
+        font-size: 10px !important;
+        margin-left: 5px !important;
+    }
+}

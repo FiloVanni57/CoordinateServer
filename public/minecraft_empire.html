@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/minecraft_logo.png">
+    <title>Minecraft Empire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="common/style.css">
+    <link rel="stylesheet" href="styleIndex.css">
+    <script src="pageME.js"></script>
+    <script src="common/common.js"></script>
+    <meta name="google-adsense-account" content="ca-pub-9066178534044354">
+</head>
+
+<body class="p-0 m-0" onload="javascript:loadPagine();">
+    <nav class="navbar navbar-expand-lg fixed-top barra">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1 text-light">
+                <img src="img/minecraft_logo.png" alt="logo" width="50" class="d-inline-block">
+                <p class="d-inline-block" id="titolo-nav">MINECRAFT EMPIRE</p>
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-lg mx-auto bottone-nav bottoni text-light"
+                            onclick="home();">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-house-fill" viewBox="0 0 20 20">
+                                <path
+                                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z" />
+                                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z" />
+                            </svg>
+                            HOME PAGE
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid p-0" id="container-benvenuto">
+        <div class="testo">
+            <p id="benvenuto" class="cursor typewriter-animation">BENVENUTO SU MINECRAFT EMPIRE</p>
+            <h3 id="sotto-titolo" class="cursor typewriter-animation">
+                SCORRI IN BASSO PER SELEZIONARE UN'OPZIONE FRA BIOMI, STRUTTURE E COSTRUZIONI DEL SERVER
+            </h3>
+        </div>
+        <div class="freccia">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-arrow-down" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+              </svg>
+        </div>
+    </div>
+    <div class="container mt-5" id="container-elenco-scelte">
+        <h2 class="text-light text-center mb-4">Elenco Scelte Disponibili</h2>
+        <div class="list-group" id="elenco-scelte">
+        </div>
+    </div>
+    <div id="imageOverlay">
+        <span id="closeOverlay">&times;</span>
+        <img id="enlargedImage" src="" alt="Enlarged Choose Logo">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
